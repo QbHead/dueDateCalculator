@@ -40,13 +40,3 @@ class DueDateCalculator {
         return $submitDateTime;
     }
 }
-
-// Testing
-try {
-    $submitDateTime = new DateTime("2023-09-08 16:12:59"); // Monday
-    $turnaroundTimeInHours = 1;
-    $dueDate = DueDateCalculator::CalculateDueDate($submitDateTime, $turnaroundTimeInHours);
-    echo "Due Date: " . $dueDate->format("Y-m-d H:i:s") . "\n"; // Should return Tuesday 09:12:59
-} catch (Exception $e) {
-    echo "Error: " . $e->getMessage() . "\n";
-}
