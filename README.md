@@ -9,10 +9,13 @@
 
     git clone https://github.com/QbHead/dueDateCalculator.git
 
+
 2. If you want to run tests, you'll need to install PHPUnit. Navigate to the project directory and run:
 
 
     composer require --dev phpunit/phpunit ^9
+
+
 ## Usage
 Include 'dueDateCalculator.php' in your project and use the DueDateCalculator::CalculateDueDate method.
 
